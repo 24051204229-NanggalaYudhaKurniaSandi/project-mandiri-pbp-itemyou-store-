@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Top Up Free Fire - ITEMYOU STORE</title>
+  <link rel="stylesheet" href="intisistem.css">
+  <style>
+    body {
+      background: url("ffbg.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      font-family: "Poppins", sans-serif;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    header.navbar {
+      background-color: rgba(0, 40, 120, 0.9);
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+
+    .logo span {
+      color: #00aaff;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00aaff;
+    }
+
+    main {
+      padding-top: 80px;
+    }
+
+    .topup-container {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 20px;
+      width: 400px;
+      margin: 50px auto;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    label {
+      display: block;
+      text-align: left;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      margin-bottom: 15px;
+      font-size: 1rem;
+    }
+
+    .btn-beli {
+      background: #00aaff;
+      color: white;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .btn-beli:hover {
+      background: #0088cc;
+    }
+
+    footer {
+      background: rgba(0, 40, 120, 0.9);
+      padding: 15px;
+      font-size: 0.9rem;
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">ITEM YOU<span>STORE</span></div>
+    <nav class="menu">
+      <a href="htmlutsproject.html">Home</a>
+      <a href="TOPUP-MLBB.html">Mobile Legends</a>
+      <a href="TOPUP-WUTHERINGWAVES.html">Wuthering Waves</a>
+      <a href="TOPUP-GENSHINIMPACT.html">Genshin Impact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1 style="color: rgb(243, 115, 35);">Top Up Free Fire</h1>
+    <p>Masukkan ID dan server kamu untuk melanjutkan top up.</p>
+
+    <div class="topup-container">
+      <form action="pembayaran.html" method="GET">
+        <label for="idplayer">ID Player:</label>
+        <input type="text" id="idplayer" name="idplayer" placeholder="Masukkan ID kamu" required>
+
+        <label for="diamond">Pilih Jumlah Diamond:</label>
+        <select id="diamond" name="diamond" required>
+          <option value="">-- Pilih Paket Diamond --</option>
+          <option value="50">50 Diamond - Rp 7.500</option>
+          <option value="70">70 Diamond - Rp 9.700</option>
+          <option value="140">140 Diamond - Rp 19.300</option>
+          <option value="210">210 Diamond - Rp 28.500</option>
+          <option value="355">355 Diamond - Rp 47.000</option>
+          <option value="720">720 Diamond - Rp 94.000</option>
+          <option value="">-- Paket Item Lain --</option>
+          <option value="1">1 WEEKLY MEMBERSHIP - Rp 27.000</option>
+          <option value="1">1 MONTHLY MEMBERSHIP - Rp 89.000</option>
+          <option value="1">1 PASS - Rp 43.000</option>
+          <option value="1">1 PASS PLUS - Rp 107.000</option>
+        </select>
+
+        <button type="submit" class="btn-beli">Beli Sekarang</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 ITEMYOU STORE</p>
+  </footer>
+</body>
+</html>

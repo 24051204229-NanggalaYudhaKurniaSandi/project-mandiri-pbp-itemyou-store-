@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Pembayaran - ITEMYOU STORE</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: url("gambarter.jpg") no-repeat center center fixed;
+      background-size: 100% auto;
+      color: white;
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* Header */
+    header.navbar {
+      background-color: #002878;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+
+    .logo {
+      font-size: 1.6rem;
+      font-weight: 700;
+    }
+
+    .logo span {
+      color: #00aaff;
+    }
+
+    .home-button {
+      position: absolute;
+      right: 40px;
+      background: #00aaff;
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .home-button:hover {
+      background: #0090e0;
+    }
+
+    /* Konten tengah */
+    .container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 5px #000;
+    }
+
+    .payment-options {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 40px;
+      flex-wrap: wrap;
+    }
+
+    .payment-card {
+      background: rgba(255, 255, 255, 0.15);
+      padding: 25px;
+      border-radius: 15px;
+      width: 200px;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .payment-card:hover {
+      background: rgba(0, 170, 255, 0.3);
+      transform: scale(1.05);
+    }
+
+    .payment-card img {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 10px;
+    }
+
+    .success-message {
+      display: none;
+      margin-top: 40px;
+      font-size: 1.5rem;
+      color: #00ff88;
+      font-weight: bold;
+      animation: fadeIn 0.6s ease;
+      text-shadow: 1px 1px 3px #000;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    /* Footer */
+    footer {
+      background: #002878;
+      padding: 20px;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">ITEM YOU<span>STORE</span></div>
+    <button class="home-button" onclick="window.location.href='htmlutsproject.html'">Home</button>
+  </header>
+
+  <div class="container">
+    <h1 style="color: rgb(2, 192, 255);">Metode Pembayaran</h1>
+    <p style="color: rgb(230, 0, 0);">Silakan pilih metode pembayaran:</p>
+
+    <div class="payment-options">
+      <div class="payment-card" onclick="showSuccess('Dana')">
+        <img src="dana.png" alt="Dana">
+        <h3>Dana</h3>
+      </div>
+
+      <div class="payment-card" onclick="showSuccess('Gopay')">
+        <img src="gopay.png" alt="Gopay">
+        <h3>Gopay</h3>
+      </div>
+
+      <div class="payment-card" onclick="showSuccess('QRIS')">
+        <img src="qris.png" alt="QRIS">
+        <h3>QRIS</h3>
+      </div>
+    </div>
+
+    <div id="successMsg" class="success-message">
+      ✅ Pembayaran Berhasil!
+    </div>
+  </div>
+
+  <footer>
+    © 2025 ITEMYOU STORE
+  </footer>
+
+  <script>
+    function showSuccess(method) {
+      const msg = document.getElementById("successMsg");
+      msg.style.display = "block";
+      msg.textContent = `✅ Pembayaran melalui ${method} Berhasil!`;
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  </script>
+</body>
+</html>

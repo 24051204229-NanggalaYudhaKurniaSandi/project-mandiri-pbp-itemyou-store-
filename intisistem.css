@@ -1,0 +1,329 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: url("gambarter.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 40, 120, 0.92);
+  padding: 15px 40px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.logo span {
+  color: #00aaff;
+}
+
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 40%;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 10px 45px 10px 15px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.icon-search {
+  position: absolute;
+  right: 15px;
+  width: 22px;
+  height: 22px;
+  opacity: 0.85;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.icon-search:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.login-btn {
+  background: #00aaff;
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-btn:hover {
+  background: #0088cc;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 120px;
+}
+
+.game-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  width: 90%;
+  max-width: 1200px;
+  padding-bottom: 120px;
+}
+
+.game-card {
+  position: relative;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+  width: 260px;
+  text-align: center;
+  transition: transform 0.6s ease;
+}
+
+.game-card img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+  transform-origin: center center;
+}
+
+.game-card:hover img {
+  transform: scale(1.1);
+}
+
+.btn-topup {
+  position: absolute;   
+  bottom: 0;  
+  left: 0;
+  width: 100%;
+  z-index: 5;  
+  background-color: #ffaa00;
+  color: #fff;
+  border: none;
+  padding: 14px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+  border-radius: 0 0 15px 15px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+.btn-topup:hover {
+  background-color: #ff8800;
+}
+
+.info-section {
+  width: 100%;
+  background: linear-gradient(rgba(0, 40, 120, 0), rgba(0, 40, 120, 1));
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.info-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #14ff14;
+}
+
+.info-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto 15px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 40, 120, 1);
+  font-size: 0.9rem;
+  margin-top: 0;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 15px; 
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #00aaff;
+  color: white;
+  padding: 10px 18px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.dropbtn:hover {
+  background-color: #0088cc;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 45px;
+  background-color: rgba(0, 40, 120, 0.95);
+  min-width: 180px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  z-index: 99;
+}
+
+.dropdown-content a {
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.dropdown-content a:hover {
+  background-color: #0077cc;
+}
+
+.dropdown-content.show {
+  display: block;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-content {
+  display: none;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown-content.show {
+  display: block;
+  animation: slideDown 0.3s ease forwards;
+}
+
+.slideshow-container {
+  width: 80%;
+  max-width: 900px;
+  margin: 60px auto 100px auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.fade {
+  animation-name: fadeEffect;
+  animation-duration: 2.0s;
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0.4;}
+  to {opacity: 1;}
+}
+
+.topup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 40px auto 80px auto;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.topup-form label {
+  font-weight: 600;
+}
+
+.topup-form input,
+.topup-form select {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.topup-form .btn-topup {
+  background-color: #00aaff;
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.topup-form .btn-topup:hover {
+  background-color: #0088cc;
+}

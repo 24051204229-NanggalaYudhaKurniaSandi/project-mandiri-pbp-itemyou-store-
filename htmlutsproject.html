@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ITEM YOU - TOPUP TERAMAN</title>
+  <link rel="stylesheet" href="intisistem.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="left-section">
+      <div class="logo">ITEM YOU<span>STORE</span></div>
+
+      <div class="dropdown">
+        <button class="dropbtn" id="dropToggle">Kategori ▼</button>
+        <div class="dropdown-content" id="dropdownMenu">
+          <a href="topup-mlbb.html">Mobile Legends</a>
+          <a href="topup-wutheringwaves.html">Wuthering Waves</a>
+          <a href="topup-freefire.html">Free Fire</a>
+          <a href="topup-genshinimpact.html">Genshin Impact</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="search-container">
+      <input type="text" placeholder="Cari Game..." class="search-bar" />
+      <img src="OIP (1).jpeg" alt="Cari" class="icon-search" />
+    </div>
+
+    <a href="contact.html" class="login-btn">Contact</a>
+  </header>
+
+  <main>
+    <section class="game-section">
+  <div class="game-card">
+    <img src="gambar1mlbb.jpg" alt="Mobile Legends">
+    <a href="topup-mlbb.html" class="btn-topup">Top Up</a>
+  </div>
+
+  <div class="game-card">
+    <img src="gambar1wuwa.jpg" alt="Wuthering Waves">
+    <a href="topup-wutheringwaves.html" class="btn-topup">Top Up</a>
+  </div>
+
+  <div class="game-card">
+    <img src="gambar3ff.jpg" alt="Free Fire">
+    <a href="topup-freefire.html" class="btn-topup">Top Up</a>
+  </div>
+
+  <div class="game-card">
+    <img src="gambar4gi.jpg" alt="Genshin Impact">
+    <a href="topup-genshinimpact.html" class="btn-topup">Top Up</a>
+  </div>
+</section>
+
+    <section class="slideshow-container">
+      <div class="slide fade">
+        <img src="slide1.jpg" alt="Promo 1">
+      </div>
+      <div class="slide fade">
+        <img src="slide2.jpg" alt="Promo 2">
+      </div>
+      <div class="slide fade">
+        <img src="slide3.jpg" alt="Promo 3">
+      </div>
+    </section>
+
+    <section class="info-section">
+      <h2>TENTANG ITEM YOU STORE</h2>
+      <p>
+        ITEM YOU STORE adalah platform top-up game terpercaya yang menyediakan berbagai layanan 
+        pengisian kredit game populer dengan harga terjangkau, transaksi cepat, dan aman.
+      </p>
+      <p>
+        Kami berkomitmen memberikan pengalaman terbaik untuk para gamer di seluruh Indonesia.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 ITEMYOU-STORE</p>
+  </footer>
+
+  <script>
+    const dropBtn = document.getElementById('dropToggle');
+    const menu = document.getElementById('dropdownMenu');
+
+    dropBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      menu.classList.toggle('show');
+    });
+
+    window.addEventListener('click', (e) => {
+      if (!menu.contains(e.target) && !dropBtn.contains(e.target)) {
+        menu.classList.remove('show');
+      }
+    });
+  </script>
+
+  <script>
+    let slideIndex = 0;
+    autoShowSlides();
+
+    function autoShowSlides() {
+      const slides = document.getElementsByClassName("slide");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      slides[slideIndex - 1].style.display = "block";  
+      setTimeout(autoShowSlides, 5000);
+    }
+  </script>
+
+</body>
+</html>

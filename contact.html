@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hubungi Kami | ITEM YOU STORE</title>
+  <link rel="stylesheet" href="intisistem.css">
+  <style>
+    body {
+      background: url("digibg.jpg") no-repeat center center fixed;
+      background-size: cover;
+      font-family: "Poppins", sans-serif;
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+
+    header.navbar {
+      background-color: rgba(0, 40, 120, 0.9);
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: white;
+    }
+    .logo span {
+      color: #00aaff;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #00aaff;
+    }
+
+    .contact-container {
+      max-width: 700px;
+      background-color: rgba(255, 255, 255, 0.95);
+      margin: 100px auto;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .contact-container h2 {
+      color: #0044aa;
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .contact-container p {
+      text-align: center;
+      color: #444;
+      margin-bottom: 25px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    label {
+      font-weight: bold;
+      color: #0044aa;
+      text-align: left;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      transition: border 0.3s;
+    }
+
+    input:focus, textarea:focus {
+      border: 1px solid #00aaff;
+      box-shadow: 0 0 5px rgba(0, 170, 255, 0.3);
+    }
+
+    button {
+      background-color: #00aaff;
+      color: white;
+      font-size: 1rem;
+      font-weight: 600;
+      border: none;
+      padding: 12px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #0088cc;
+    }
+
+    .contact-info {
+      text-align: center;
+      margin-top: 30px;
+      color: #333;
+    }
+
+    .social-links a {
+      color: #0044aa;
+      text-decoration: none;
+      font-size: 1.3rem;
+      margin: 0 10px;
+      transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+      color: #00aaff;
+    }
+
+    footer {
+      background-color: rgba(0, 40, 120, 0.9);
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">ITEM YOU<span>STORE</span></div>
+    <nav>
+      <a href="htmlutsproject.html">Home</a>
+      <a href="topup-mlbb.html">Mobile Legends</a>
+      <a href="topup-wutheringwaves.html">Wuthering Waves</a>
+      <a href="topup-freefire.html">Free Fire</a>
+      <a href="topup-genshinimpact.html">Genshin Impact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="contact-container">
+      <h2>Hubungi Kami</h2>
+      <p>Punya pertanyaan seputar top-up, kerja sama, atau kendala transaksi? Kirim pesan ke tim kami!</p>
+
+      <form>
+        <label for="name">Nama Lengkap</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Masukkan email Anda" required>
+
+        <label for="message">Pesan</label>
+        <textarea id="message" rows="5" placeholder="Tulis pesan Anda..." required></textarea>
+
+        <button type="submit">Kirim Pesan</button>
+      </form>
+
+      <div class="contact-info">
+        <p><strong>Email:</strong> support@itemyoustore.com</p>
+        <p><strong>WhatsApp:</strong> +62 812-3456-7890</p>
+        <p><strong>Jam Operasional:</strong> 09.00 - 22.00 WIB</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 ITEM YOU STORE
+  </footer>
+
+</body>
+</html>
