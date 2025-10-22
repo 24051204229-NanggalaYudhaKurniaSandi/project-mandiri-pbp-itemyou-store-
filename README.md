@@ -28,4 +28,4 @@ dan di bagian bawah terdapat informasi banner yang bia berubah ubah seperti even
 
 
 link youtube
-: 
+: https://youtu.be/HmLkU2DcD2s?si=Ji6a4SHnjDXwsCEN
