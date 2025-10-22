@@ -1,4 +1,10 @@
 # project-mandiri-pbp-itemyou-store-
+
+nama: nanggala yudha kurnia sandi
+nim: 24051204229
+kelas: TiG 2024
+
+
 website topup game mengunakan html,css dan java script
 di bagian halaman utama terdapat 4opsi pilihan
 yaitu (mobile legends,wuthering waves,free fire dan genshin impact)
