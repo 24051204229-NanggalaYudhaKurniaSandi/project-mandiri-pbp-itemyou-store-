@@ -2,7 +2,8 @@
 website topup game mengunakan html,css dan java script
 di bagian halaman utama terdapat 4opsi pilihan
 yaitu (mobile legends,wuthering waves,free fire dan genshin impact)
-![Tampilan Website](png1.jpg)
+![Tampilan Website](png
+.jpg)
 
 di bawah kotak terdapat tombol bertuliskan topup dan mengarah ke halaman lain
 ada opsi juga di bagian kategori dan fungsinya sama
